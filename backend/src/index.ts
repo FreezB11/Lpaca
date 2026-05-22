@@ -1,5 +1,10 @@
 import express from "express";
 import { AuthHandler } from "./auth/auth";
+import { McpHandler } from "./mcp/mcp";
+import { WorkerHandler } from "./workers/worker";
+import { ProjectHandler } from "./projects/projects";
+import { EndpointHandler } from "./endpoints/endpoint";
+import { BillingHandler } from "./billing/bills";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
