@@ -1,3 +1,3 @@
 import express from "express";
 
-export const ProjectHandler = express.Router();
+export const ProjectRouter = express.Router();

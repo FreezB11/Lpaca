@@ -1,3 +1,3 @@
 import express from "express";
 
-export const McpHandler = express.Router();
+export const McpRouter = express.Router();

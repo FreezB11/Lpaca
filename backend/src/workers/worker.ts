@@ -1,3 +1,3 @@
 import express from "express";
 
-export const WorkerHandler = express.Router();
+export const WorkerRouter = express.Router();
