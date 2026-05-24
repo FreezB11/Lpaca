@@ -24,12 +24,13 @@ POST   /api/v1/auth/reset-password
 # PROJECTS / WORKSPACES
 # =========================================================
 
-GET    /api/v1/projects
-POST   /api/v1/projects
+GET    /api/v1/projects/:userID
+POST   /api/v1/projects/:userID
 
-GET    /api/v1/projects/:projectId
-PATCH  /api/v1/projects/:projectId
-DELETE /api/v1/projects/:projectId
+# we can use either projectID or projectName 
+GET    /api/v1/projects/:userID/:projectId
+PATCH  /api/v1/projects/:userID/:projectId
+DELETE /api/v1/projects/:userID/:projectId
 
 
 # =========================================================
