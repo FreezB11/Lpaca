@@ -24,8 +24,10 @@ POST   /api/v1/auth/reset-password
 # PROJECTS / WORKSPACES
 # =========================================================
 
-GET    /api/v1/projects/:userID
-POST   /api/v1/projects/:userID
+GET    /api/v1/projects/:userID # fetcht the projects list
+POST   /api/v1/projects/:userID # creation of the project
+
+POST   /api/v1/projects/:userID/:projectID/deploy # this will trigger the backed service to start docker on the server instances
 
 # we can use either projectID or projectName 
 GET    /api/v1/projects/:userID/:projectId
